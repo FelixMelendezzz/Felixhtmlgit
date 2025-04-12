@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Botica | Gestión</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header>
+    <h1>Botica Salud Total</h1>
+    <nav>
+      <a href="#" id="inicio">Inicio</a>
+      <a href="#" id="ventas">Ventas</a>
+      <a href="#" id="inventario">Inventario</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección de Inicio -->
+    <section id="inicio-section" class="seccion-activa">
+      <h2>Tablero</h2>
+      <div class="card">
+        <p>Productos en stock: <strong>250</strong></p>
+        <p>Ventas hoy: <strong>S/ 350.00</strong></p>
+        <p>Total de ventas este mes: <strong>S/ 5,250.00</strong></p>
+        <p>Clientes atendidos: <strong>120</strong></p>
+      </div>
+    </section>
+
+    <!-- Sección de Ventas -->
+    <section id="ventas-section" class="seccion-inactiva">
+      <h2>Registrar Venta</h2>
+      <form id="formVenta">
+        <input type="text" placeholder="Producto" id="producto" required />
+        <input type="number" placeholder="Cantidad" id="cantidad" required />
+        <input type="number" placeholder="Precio" id="precio" required />
+        <button type="submit">Registrar Venta</button>
+      </form>
+      <div id="mensaje"></div>
+
+      <h3>Historial de Ventas</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Total</th>
+            <th>Fecha</th>
+          </tr>
+        </thead>
+        <tbody id="tablaVentas">
+          <!-- Aquí se agregarán las ventas -->
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Sección de Inventario -->
+    <section id="inventario-section" class="seccion-inactiva">
+      <h2>Inventario</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Imagen</th>
+            <th>Stock</th>
+            <th>Precio</th>
+            <th>Proveedor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Paracetamol</td>
+            <td><img src="https://img.asmedia.epimg.net/resizer/v2/QJVFW6HBOZALTNKSJLNEMJCX6E.png?auth=15e1fb9067695e07c9f5d087c7b5d0dec3c32b39c4aa53e84f9052e50eeac559&width=1472&height=1104&smart=true" alt="Paracetamol" class="imagen-producto" /></td>
+            <td>300</td>
+            <td>S/ 1.20</td>
+            <td>Laboratorios ABC</td>
+          </tr>
+          <tr>
+            <td>Ibuprofeno</td>
+            <td><img src="https://www.lasanteca.com/userfiles/2018/12/IBUPROFENO-800MG-CAJA-POR-50-TABLETAS-CON-BLISTER.jpg" alt="Ibuprofeno" class="imagen-producto" /></td>
+            <td>200</td>
+            <td>S/ 1.80</td>
+            <td>Farmacéutica XYZ</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Botica Salud Total. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
+
